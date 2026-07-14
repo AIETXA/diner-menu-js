@@ -144,7 +144,7 @@ const comentariosCamarera = [
     '¡Excelente elección! De los preferidos de los clientes',
     '¡Marchando una! Es el especial del chef',
     '¡Buena elección! El día lo amerita',
-    '¡Perfecto! Segundo que te va a encantar'
+    '¡Perfecto! Seguro que te va a encantar'
 ]
 
 
@@ -196,6 +196,6 @@ const comentarioElegido = comentariosCamarera[indiceAleatorio];
 let listaPedidoTexto = platosElegidos.map(plato => `• ${plato}`).join('\n');
 alert(`${comentarioElegido}`)
 
-console.log('El cliente ha elegido:', platosElegidos);
-console.log('Precio:', precioTotal);
+alert(`El cliente ha elegido: ${platosElegidos} y el precio total es ${precioTotal}€` )
+
 }
