@@ -4,17 +4,55 @@ const horaActual = moment().format('HH:mm');
 
 console.log("Hola la hora detectada es:", horaActual)
 
-const menuLunch = {
+let menuBreakfast = { 
+    clasicos: {
+        'Café/Té + Tostadas clásicas (mantequilla y mermelada)': 3.80,
+        'Café/Té + Bolleria': 3.50,
+        'Yogurt con avena, miel y banana': 4.0
+    },
+    extras: {
+        'Matcha': 2.50,
+        'Zumo de naranja natural': 4.0
+    }
+
+};
+
+
+let menuLunch = {
     entrantes: {
-        'Ensaladilla Rusa': 8.50,
-        'Ensalada Mixta': 10.0,
-        'Calamares': 9.0
+        'Ensaladilla Rusa': 6.50,
+        'Ensalada Mixta': 8.5,
+        'Calamares': 7.0
+    },
+    primero: {
+        'Crema de verduras': 5.0,
+        'Lengua rebosada con pimientos rojos': 7,
+        'Lubina con verduritas': 7.50
     },
     extras: {
         'Alioli': 1.0,
         'Pan': 1.0
     }
 };
+
+let menuDinner = {
+    entrantes : {
+        'Panaché de verduras': 7.5,
+        'Chorizo frito': 6.0,
+        'Chipis plancha': 8.0
+    },
+
+    primero: {
+        'Escalope de ternera con papas panaderas': 15.0,
+        'Pechuga de pollo grillada con verduras': 15.0,
+        'Revuelto de hongos': 13.0
+    },
+    extras : {
+        'Pan': 1.2,
+        'Pimientos piquillo': 1.5
+    }
+};
+
 
 const comentariosCamarera = [
     '¡Excelente elección! De los preferidos de los clientes',
@@ -32,6 +70,9 @@ for(let plato in menuLunch.entrantes) {
 }
 
 textoMenu += "\n¿Qué te apetece comer hoy?";
+
+
+
 
 //control de errores
 let eleccionUsuario = '';
