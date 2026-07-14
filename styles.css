@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuyu+Short:wght@400&display=swap');
+
+
+body {
+    margin: 50px;
+    padding: 0;
+    background-color: rgb(12, 6, 45);
+    color: rgb(192, 192, 169);
+}
+
+h1 {
+  font-family: "Yuyu Short", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+
+}
